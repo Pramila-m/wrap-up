@@ -22,3 +22,4 @@ moviepy
 jellyfish
 matplotlib
 gTTS
+BeautifulSoup4
