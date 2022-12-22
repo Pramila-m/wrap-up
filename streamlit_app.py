@@ -12,7 +12,7 @@ import os
 from gtts import gTTS  
 from playsound import playsound  
 from moviepy.editor import *
-import fitz
+
 import numpy as np
 import matplotlib.pyplot as plt
 import jellyfish
