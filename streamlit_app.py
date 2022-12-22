@@ -10,7 +10,7 @@ import base64
 from PIL import Image
 import os
 from gtts import gTTS  
-from playsound import playsound  
+import playsound  
 from moviepy.editor import *
 
 import numpy as np
