@@ -24,3 +24,4 @@ matplotlib
 gTTS
 BeautifulSoup4
 playsound
+simplet5
