@@ -18,7 +18,7 @@ import textwrap
 from simplet5 import SimpleT5
 import re                    
 nltk.download('punkt')
-
+nltk.download('stopwords')
 app_name = "Deep Wrap-UP"
 
 # Start the app in wide-mode
