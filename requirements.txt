@@ -3,9 +3,7 @@ pillow
 click>=7.0
 ftfy==5.8
 regex
---find-links https://download.pytorch.org/whl/torch_stable.html
-torch==1.7.1+cpu
-torchvision==0.8.2+cpu
+pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 pandas==1.1.5
 dspipe==0.2.3
 numpy==1.19.5
