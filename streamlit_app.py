@@ -153,12 +153,16 @@ listdir=[image_path,text_image_path,video_path,audio_path]
 
 
 
+import os, os.path
 for i in listdir:
-    os.chdir(i)
-    all_files = os.listdir(i)
-    
-    for f in all_files:
-        os.remove(f)
+	for root, _, files in os.walk(i):
+	    for f in files:
+        		fullpath = os.path.join(root, f)
+        		try:
+        		    if os.path.getsize(fullpath) < 10 * 1024:   #set file size in kb
+            			os.remove(fullpath)
+        		except WindowsError:
+        		    st.write( "Error" )
 
 pattern=r'\d+\.|[a-zA-Z]\)\s+|•'
 
